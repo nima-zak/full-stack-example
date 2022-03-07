@@ -1,0 +1,26 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "server seide of my application",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && npm run start",
+    "start": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nima-zak/full-stack-example.git"
+  },
+  "author": "Nima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nima-zak/full-stack-example/issues"
+  },
+  "homepage": "https://github.com/nima-zak/full-stack-example#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
+    "express": "^4.17.3"
+  }
+}
